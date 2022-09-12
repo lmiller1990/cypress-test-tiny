@@ -17,10 +17,39 @@
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
-    "ok-file": "1.5.2"
+    "ok-file": "1.5.2",
+    "@types/faker": "4.1.12",
+    "@typescript-eslint/eslint-plugin": "2.24.0",
+    "@typescript-eslint/parser": "2.30.0",
+    "cypress-multi-reporters": "1.2.4",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-typescript": "7.2.1",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-cypress": "2.10.3",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-prettier": "3.1.3",
+    "mocha-junit-reporter": "1.23.3",
+    "prettier": "2.0.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.74.0",
+    "@cypress/browserify-preprocessor": "2.2.4",
+    "@types/cypress-cucumber-preprocessor": "1.14.1",
+    "cypress": "10.7.0",
+    "cypress-cucumber-preprocessor": "4.3.1",
+    "faker": "4.1.0",
+    "puppeteer": "2.1.1",
+    "tsify": "4.0.1",
+    "typescript": "4.8.3",
+    "uuidv4": "6.0.8",
+    "xlsx": "0.16.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
-  }
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+]
 }

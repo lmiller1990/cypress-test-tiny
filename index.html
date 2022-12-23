@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <script>
+      setTimeout(() => {
+        const resources = performance.getEntriesByType("resource");
+        console.log(resources)
+        resources.forEach((entry) => {
+          console.log(entry);
+        });
+
+        document.querySelector('#app').innerText = 'hello world'
+      }, 1500)
+
+const observer = new PerformanceObserver((list) => {
+  list.getEntries().forEach((entry) => {
+    console.log(entry);
+  });
+});
+
+observer.observe({ type: "resource", buffered: true });
+
+    </script>
+  </body>
+</html>

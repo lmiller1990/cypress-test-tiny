@@ -1,7 +1,9 @@
 Benchmarks:
 
-- With Faker (large js library): `npm run with-faker`
-- Without Faker (no large js library): `npm run without-faker`
+- With Faker (large js library) and webpack: `npm run with-faker`
+- Without Faker (no large js library) and webpack: `npm run without-faker`
+- With Faker (large js library) and esbuild: `npm run with-faker --config-file cypress-esbuild.config.js`
+- Without Faker (no large js library) and esbuild: `npm run without-faker --config-file cypress-esbuild.config.js`
 
 With Faker:
 

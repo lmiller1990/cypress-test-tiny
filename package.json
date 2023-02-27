@@ -13,7 +13,9 @@
     "check-videos": "ok-file 'cypress/videos/*.mp4'",
     "set-status": "set-status",
     "with-faker": "cypress run --spec '**/*with**'",
-    "without-faker": "cypress run --spec '**/*no**'"
+    "without-faker": "cypress run --spec '**/*no**'",
+    "with-faker-esbuild": "cypress run --spec '**/*with**' --config-file cypress-esbuild.config.js",
+    "without-faker-esbuild": "cypress run --spec '**/*no**' --config-file cypress-esbuild.config.js"
   },
   "keywords": [],
   "author": "Gleb Bahmutov <gleb@cypress.io>",
@@ -27,6 +29,7 @@
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
   },
   "dependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cypress": "^12.7.0"
   }
 }

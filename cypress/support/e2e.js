@@ -14,7 +14,49 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+import { gql } from "graphql-request";
+
+export class AbstractQuery {
+  constructor(query, variables) {
+    this.config = {};
+    this.query = query;
+    this.variables = variables;
+  }
+
+  withConfig(config) {
+    this.config = config;
+    console.log("CONFIG " + config);
+    return this;
+  }
+
+  doQuery() {
+    return cy
+      .wrap(null, { log: false })
+      .then(() => {
+        TokenGetter.getAccessToken(this.config);
+      })
+      .then((token) => {
+        cy.log("TOKEN: " + token.tokenValue);
+        return cy.request({
+          method: "POST",
+          url: "https://testme.com/gql",
+          headers: {
+            Authorization: `Bearer ${token.tokenValue}`,
+            "Context-Type": "application/graphql",
+            Accept: "application/json",
+          },
+          body: {
+            query: gql`
+              ${this.query}
+            `,
+            variables: this.variables,
+          },
+        });
+      });
+  }
+}

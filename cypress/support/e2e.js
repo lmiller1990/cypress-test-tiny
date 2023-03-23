@@ -18,3 +18,7 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+import { batchRequests } from 'graphql-request'
+
+console.log(batchRequests)

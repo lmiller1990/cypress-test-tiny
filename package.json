@@ -27,6 +27,7 @@
     "allure": "^0.0.0",
     "allure-commandline": "^2.17.2",
     "aws-sdk": "^2.1110.0",
+    "babel-loader": "^9.1.2",
     "csv-parser": "^3.0.0",
     "cypress-grep": "^2.14.0",
     "cypress-iframe": "^1.0.1",

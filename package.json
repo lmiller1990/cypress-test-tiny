@@ -37,7 +37,7 @@
     "dotenv": "^16.0.3",
     "fs-extra": "^10.0.1",
     "graphql": "^16.6.0",
-    "graphql-request": "^5.2.1-next.1", 
+    "graphql-request": "^5.2.1-next.1",
     "jimp": "^0.22.7",
     "loglevel": "^1.8.0",
     "moment": "^2.29.3",
@@ -51,6 +51,7 @@
     "transit-js": "^0.8.874",
     "typescript": "^4.6.3",
     "uuid": "^8.3.2",
+    "webpack": "^5.76.3",
     "write-excel-file": "^1.4.21",
     "yarn": "^1.22.18"
   },

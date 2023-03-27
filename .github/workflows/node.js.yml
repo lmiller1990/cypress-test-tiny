@@ -26,6 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+      env:
+        RECORD_KEY: ${{ secrets.RECORD_KEY }}
     - run: npm install
-    - run: npx  cypress run --record --key ${{ env.RECORD_KEY }}
+    - run: npx  cypress run --record --key $RECORD_KEY
 

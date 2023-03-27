@@ -29,5 +29,5 @@ jobs:
       env:
         RECORD_KEY: ${{ secrets.RECORD_KEY }}
     - run: npm install
-    - run: npx  cypress run --record --key $RECORD_KEY
+    - run: npx cypress run --record --key ${{ secrets.RECORD_KEY }}
 

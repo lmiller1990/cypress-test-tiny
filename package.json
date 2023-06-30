@@ -25,6 +25,7 @@
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
   },
   "dependencies": {
-    "cypress": "^12.8.0"
+    "cypress": "^12.8.0",
+    "cypress-real-events": "^1.8.1"
   }
 }

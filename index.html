@@ -15,11 +15,17 @@
       z-index: 10;
     }
   </style>
+
+  <script>
+    function greet () {
+      console.log('hello')
+    }
+  </script>
 </head>
 
 <body>
   <div id="modal">modal</div>
-  <div id="menu">menu</div>
+  <div id="menu" onclick="greet()">menu</div>
 </body>
 
 </html>

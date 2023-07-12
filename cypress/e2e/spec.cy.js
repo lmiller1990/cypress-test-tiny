@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
-describe('page', { defaultCommandTimeout: 1000 * 20 }, () => {
-  it('works', () => {
-    cy.visit('https://example.cypress.io')
-  })
-})
+describe("page", () => {
+  it("works", () => {
+    cy.visit("http://localhost:8000");
+    cy.screenshot()
+  });
+});

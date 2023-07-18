@@ -25,6 +25,9 @@
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
   },
   "dependencies": {
-    "cypress": "^12.8.0"
+    "@cypress/webpack-dev-server": "^3.5.1",
+    "cypress": "^12.8.0",
+    "webpack": "^5.88.2",
+    "webpack-dev-server": "^4.15.1"
   }
 }
